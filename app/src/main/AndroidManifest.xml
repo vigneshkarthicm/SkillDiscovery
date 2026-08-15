@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SkillDiscovery">
+
+        <activity
+            android:name=".AuthActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SkillDiscovery"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ClassCodeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SkillDiscovery" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Profile"
+            android:theme="@style/Theme.SkillDiscovery" />
+
+        <activity
+            android:name=".AchievementsActivity"
+            android:exported="false"
+            android:label="Achievements"
+            android:theme="@style/Theme.SkillDiscovery" />
+
+        <activity
+            android:name=".DiscussionActivity"
+            android:exported="false"
+            android:label="Discussion"
+            android:theme="@style/Theme.SkillDiscovery" />
+
+        <activity
+            android:name=".ExploreActivity"
+            android:exported="false"
+            android:label="Explore"
+            android:theme="@style/Theme.SkillDiscovery" />
+
+        <activity
+            android:name=".MoreActivity"
+            android:exported="false"
+            android:label="More"
+            android:theme="@style/Theme.SkillDiscovery" />
+
+    </application>
+
+</manifest>
